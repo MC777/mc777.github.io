@@ -1,18 +1,24 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
+@import "modules/hero.scss";
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 16px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 body {
-  color: $big-stone;
-  background: #fff;
-  font-family: 'Poppins', sans-serif;
-  border: 16px solid $big-stone;
+	color: $big-stone;
+	background: #fff;
+	font-family: "Poppins", sans-serif;
+	border: 16px solid $big-stone;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
