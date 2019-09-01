@@ -53,8 +53,8 @@
 		color: $blue;
 		text-decoration: none;
 		font-weight: 500;
-		font-size: 18px;
-		line-height: 32px;
+		font-size: 1.125rem;
+		line-height: 2rem;
 		display: inline-flex;
 		align-items: center;
 		& + & {
@@ -62,7 +62,7 @@
 			position: relative;
 			&::after {
 				content: "";
-				height: 32px;
+				height: 2rem;
 				width: 2px;
 				background: #cbd2d9;
 				position: absolute;
