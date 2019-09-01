@@ -52,12 +52,12 @@
 		text-decoration: none;
 	}
 	&__icon {
-		filter: invert(48%) sepia(80%) saturate(4581%) hue-rotate(187deg)
-			brightness(105%) contrast(97%);
+		filter: invert(95%) sepia(6%) saturate(1506%) hue-rotate(188deg)
+				brightness(106%) contrast(96%);
 		height: 32px;
 		&:hover {
-			filter: invert(95%) sepia(6%) saturate(1506%) hue-rotate(188deg)
-				brightness(106%) contrast(96%);
+			filter: invert(48%) sepia(80%) saturate(4581%) hue-rotate(187deg)
+			brightness(105%) contrast(97%);
 		}
 	}
 }
