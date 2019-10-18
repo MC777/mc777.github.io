@@ -1,40 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Marek Cieśla</title>
+  <meta name="description" content="Personal site with projects list and skills by Marek Cieśla." />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <meta property="og:title" content="Marek Cieśla" />
+  <meta property="og:description" content="Personal site with projects list and skills by Marek Cieśla." />
+  <meta property="og:url" content="https://mc777.github.io" />
+  <meta property="og:image" content="https://mc777.github.io/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="icon" type="image/png" href="assets/img/icon.png" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+<body>
+  <main>
+    <section class="hero">
+      <img src="assets/img/avatar.jpg" class="hero__image" alt="Marek Cieśla.">
+      <h1 class="hero__title">Hi! My name is Marek Cieśla and I'm aspairing Java Developer.</h1>
+      <p class="hero__description">You might be interested in checking the list of <a class="hero__link"
+          href="#my-skills">my
+          skills</a>. Don't forget to have a glimpse at <a class="hero__link" href="#my-projects">my projects</a>.
+        Currently I'm
+        looking for a new chellenges so if you have one - <a class="hero__link" href="#contact">contact me</a></p>
+      <a class="hero__link" href="mailto:ciesla.marek@gmail.com">ciesla.marek@gmail.com</a>
+    </section>
+    <section id="my-skills" class="skills">
+      <h2 class="skills__title">My skills</h2>
+      <section class="skills-list">
+        <h3 class="skills-list__title">Working knowledge</h3>
+        <ul class="skills-list__list">
+          <li class="skills-list__item">Java</li>
+          <li class="skills-list__item">IntelliJ</li>
+          <li class="skills-list__item">Eclipse</li>
+          <li class="skills-list__item">Visual Studi Code</li>
+          <li class="skills-list__item">Git / GitHub</li>
+          <li class="skills-list__item">MySQL</li>
+          <li class="skills-list__item">HTML</li>
+          <li class="skills-list__item">CSS</li>
+          <li class="skills-list__item">Bootstrap</li>
+          <li class="skills-list__item">Flexbox</li>
+          <li class="skills-list__item">Markdown</li>
+          <li class="skills-list__item">JS: localstorage</li>
+          <li class="skills-list__item">Figma</li>
+          <li class="skills-list__item">Forms</li>
+          <li class="skills-list__item">JS: DOM manipulation</li>
+          <li class="skills-list__item">SASS</li>
+        </ul>
+      </section>
 
-    <script src="js/main.js"></script>
-  </body>
+      <section class="skills-list skills-list--violet">
+        <h3 class="skills-list__title">Know something abut</h3>
+        <ul class="skills-list__list">
+          <li class="skills-list__item">Spring / Hibernate / Maven</li>
+          <li class="skills-list__item">MongoDB</li>
+          <li class="skills-list__item">PostgreSQL</li>
+          <li class="skills-list__item">Tomcat</li>
+          <li class="skills-list__item">JavaScript</li>
+          <li class="skills-list__item">jQuery</li>
+          <li class="skills-list__item">JUnit</li>
+          <li class="skills-list__item">Project Patterns</li>
+          <li class="skills-list__item">Scrum</li>
+          <li class="skills-list__item">Agile</li>
+          <li class="skills-list__item">Working with API</li>
+          <li class="skills-list__item">NPM script</li>
+          <li class="skills-list__item">Progressive web apps</li>
+          <li class="skills-list__item">XML</li>
+          <li class="skills-list__item">JSON</li>
+        </ul>
+      </section>
+
+      <section class="skills-list skills-list--blue">
+        <h3 class="skills-list__title">Want to learn</h3>
+        <ul class="skills-list__list">
+          <li class="skills-list__item">Linux</li>
+          <li class="skills-list__item">React JS</li>
+          <li class="skills-list__item">Angular</li>
+          <li class="skills-list__item">Mockito</li>
+        </ul>
+      </section>
+    </section>
+    <section id="my-projects" class="projects">
+      <h2 class="projects__title">Recent projects</h2>
+      <div class="container">
+        <p class="projects__description">I started my java developer path in 2018. Since then, I've built some projects.
+          Here's the list I've done so far.</p>
+        <ul class="projects-list projects-list--js"></ul>
+      </div>
+    </section>
+    <footer id="contact" class="contact">
+      <h2 class="contact__title">
+        Contact me
+      </h2>
+      <div class="container">
+        <p class="contct__description">I'm open for new opportunities. If you have one we should talk!</p>
+        <ul class="social">
+          <li class="social__item"><a target="_blank" rel="noopener noreferrer" class="social__link"
+              href="https://www.linkedin.com/in/cieslamarek/"><img class="social__icon"
+                src="assets/img/linkedin-icon.svg" alt="linkedin"></a></li>
+          <li class="social__item"><a target="_blank" rel="noopener noreferrer" class="social__link"
+              href="https://github.com/MC777"><img class="social__icon" src="assets/img/github-icon.svg"
+                alt="github"></a></li>
+        </ul>
+        <a class="contact__mail" href="mailto:ciesla.marek@gmail.com">ciesla.marek@gmail.com</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
