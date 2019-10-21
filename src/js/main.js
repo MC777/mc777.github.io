@@ -1,6 +1,7 @@
 "use strict";
 
 const list = document.querySelector('.projects-list--js');
+const reposToHide = ["ud839_Miwok-Starter-code"];
 
 fetch('https://api.github.com/users/mc777/repos?sort=updated&direction=desc')
   .then(resp => resp.json())
